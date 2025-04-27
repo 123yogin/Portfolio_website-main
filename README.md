@@ -29,23 +29,6 @@ Built with love, clean design principles, and a passion for technology 🚀.
 - **Deployment:** Vercel
 
 ---
-
-## 📁 Folder Structure (Basic)
-
-```
-portfolio-website/
-├── public/
-│   ├── images/
-│   └── index.html
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── README.md
-```
-
 ---
 
 ## 🧩 Customization
