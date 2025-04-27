@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Medical Cross -->
+  <path d="M380 150h40v100h100v40h-100v100h-40v-100h-100v-40h100z" fill="#007bff"/>
+  
+  <!-- Pills -->
+  <circle cx="200" cy="400" r="30" fill="#dc3545"/>
+  <circle cx="600" cy="400" r="30" fill="#28a745"/>
+  
+  <!-- Connection Lines -->
+  <path d="M230 400h340" stroke="#6c757d" stroke-width="4" fill="none"/>
+  
+  <!-- Inventory Boxes -->
+  <rect x="100" y="200" width="60" height="60" fill="#ffc107" rx="5"/>
+  <rect x="640" y="200" width="60" height="60" fill="#ffc107" rx="5"/>
+  
+  <!-- Supply Chain Arrows -->
+  <path d="M160 230l440 0" stroke="#17a2b8" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#17a2b8"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yogin Parmar - Software Engineer & Web Developer Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Yogin Parmar - A passionate software engineer and web developer specializing in creating robust, scalable solutions">
+    <meta name="keywords" content="Yogin Parmar, Software Engineer, Web Developer, Portfolio, UI/UX Designer, Problem Solver">
+    <meta name="author" content="Yogin Parmar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yogin Parmar - Software Engineer & Web Developer">
+    <meta property="og:description" content="Portfolio showcasing web development and software engineering projects">
+    <meta property="og:image" content="images/profile.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yogin Parmar - Software Engineer & Web Developer">
+    <meta name="twitter:description" content="Portfolio showcasing web development and software engineering projects">
+    <meta name="twitter:image" content="images/profile.jpg">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT & ACHIEVEMENTS
+======================================*/
+
+.about-mf .box-shadow-full {
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.achievement-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-color: #ffbd39;
+}
+
+.achievement-icon {
+  font-size: 2.5rem;
+  color: #ffbd39;
+  margin-bottom: 1.5rem;
+}
+
+.achievement-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.achievement-card .badge {
+  background: linear-gradient(45deg, #ffbd39, #ffd571);
+  color: #000;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.achievement-card p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.achievement-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.achievement-stats span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.achievement-stats i {
+  color: #ffbd39;
+}
+
+.skill-mf {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 189, 57, 0.1);
+}
+
+.skill-item {
+  margin-bottom: 1.5rem;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.skill-percentage {
+  color: #ffbd39;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.progress {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  background: linear-gradient(45deg, #ffbd39, #ffd571);
+  height: 100%;
+  border-radius: 10px;
+  transform-origin: left;
+  animation: fillBar 1.5s ease forwards;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes fillBar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffbd39;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+/* Common Styles */
+.underline-custom {
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(to right, #ffbd39, #ff9a00);
+    margin: 0 auto 30px;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    color: #fff;
+}
+
+.section-title i {
+    color: #ffbd39;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(18, 18, 18, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.profile-header {
+    padding: 30px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 189, 57, 0.2), rgba(0, 0, 0, 0.7));
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 15px;
+    border: 4px solid rgba(255, 189, 57, 0.6);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.profile-title h3 {
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.profile-title span {
+    color: #ffbd39;
+    font-size: 16px;
+}
+
+.profile-content {
+    padding: 25px;
+}
+
+.profile-info {
+    margin: 25px 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 189, 57, 0.15);
+    border-radius: 50%;
+    margin-right: 12px;
+    color: #ffbd39;
+    font-size: 16px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.info-value {
+    color: #fff;
+    font-size: 14px;
+}
+
+.profile-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffbd39;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ffbd39;
+    color: #121212;
+    transform: translateY(-5px);
+}
+
+/* Modern Cards for Content */
+.card-modern {
+    background: rgba(18, 18, 18, 0.8);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+    border-left: 3px solid #ffbd39;
+}
+
+/* Strengths */
+.key-strengths {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.strength-tag {
+    background: rgba(255, 189, 57, 0.15);
+    color: #ffbd39;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Skills */
+.skill-clusters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-cluster h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.skill-cluster h4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background: #ffbd39;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 189, 57, 0.3);
+}
+
+.skill-tag:hover {
+    background: rgba(255, 189, 57, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 15px; /* Add padding for alignment */
+}
+
+.service-card {
+    background: rgba(18, 18, 18, 0.8);
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px; /* Add spacing between cards */
+}
+
+.service-card:hover {
+    background: rgba(255, 189, 57, 0.1);
+    border-color: rgba(255, 189, 57, 0.3);
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 189, 57, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: #ffbd39;
+    font-size: 24px;
+}
+
+.service-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-primary, .btn-outline-primary {
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .col-md-5 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-card {
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+    }
+    
+    .cta-buttons .ml-3 {
+        margin-left: 0 !important;
+    }
+}
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Yogin Parmar</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/yp.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Yogin Parmar</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Web Developer  ',
+						'Software Engineer  ',
+						'UI/UX Designer  ',
+						'Problem Solver  '
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Software Engineer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p> 
+							<a href="https://github.com/123yogin" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center mb-5">
+                <h1 class="big">About</h1>
+                <h2 class="heading">About Me</h2>
+                <div class="underline-custom"></div>
+            </div>
+        </div>
+        
+        <div class="row d-flex align-items-stretch">
+            <!-- Left column: Profile and Summary -->
+            <div class="col-md-5 mb-5">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-img">
+                            <img src="images/yp.jpg" alt="Yogin Parmar" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="profile-title">
+                            <h3>Yogin Parmar</h3>
+                            <span>Software Engineer & Web Developer</span>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-content">
+                        <p class="lead">I am a passionate and results-driven software engineer specializing in building innovative web solutions and scalable applications.</p>
+                        
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <span class="info-icon"><i class="icon-mortarboard"></i></span>
+                                <div class="info-text">
+                                    <span class="info-label">Education</span>
+                                    <span class="info-value">Bachelor of Engineering</span>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-icon"><i class="icon-map-marker"></i></span>
+                                <div class="info-text">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Gandhinagar, India</span>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-icon"><i class="icon-world"></i></span>
+                                <div class="info-text">
+                                    <span class="info-label">Languages</span>
+                                    <span class="info-value">English, Hindi</span>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-icon"><i class="icon-heart"></i></span>
+                                <div class="info-text">
+                                    <span class="info-label">Interests</span>
+                                    <span class="info-value">Reading, Playing</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-social">
+                            <a href="https://github.com/123yogin" class="social-icon">
+                                <i class="icon-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yogin-parmar-15b7aa1a8/" class="social-icon">
+                                <i class="icon-linkedin"></i>
+                            </a>
+                            <a href="mailto:parmaryogin04@gmail.com" class="social-icon">
+                                <i class="icon-mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right column: Skills and Details -->
+            <div class="col-md-7">
+                <div class="about-content">
+                    <div class="about-section mb-5">
+                        <h3 class="section-title"><i class="icon-user-following mr-2"></i>Professional Summary</h3>
+                        <div class="card-modern">
+                            <p>A passionate software engineer with a strong foundation in full-stack development and a keen eye for detail. I transform complex problems into elegant solutions, focusing on creating user-centric experiences that drive engagement and results.</p>
+                            
+                            <div class="key-strengths">
+                                <div class="strength-tag">Problem Solver</div>
+                                <div class="strength-tag">Creative Thinker</div>
+                                <div class="strength-tag">Detail Oriented</div>
+                                <div class="strength-tag">Fast Learner</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-section mb-5">
+                        <h3 class="section-title"><i class="icon-energy mr-2"></i>Technical Expertise</h3>
+                        <div class="card-modern">
+                            <div class="skill-clusters">
+                                <div class="skill-cluster">
+                                    <h4>Programming</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">C/C++</span>
+                                        <span class="skill-tag">Java</span>
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-cluster">
+                                    <h4>Frontend</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">HTML5</span>
+                                        <span class="skill-tag">CSS3</span>
+                                        <span class="skill-tag">React.js</span>
+                                        <span class="skill-tag">Tailwind</span>
+                                        <span class="skill-tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-cluster">
+                                    <h4>Backend</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Node.js</span>
+                                        <span class="skill-tag">Flask</span>
+                                        <span class="skill-tag">Django</span>
+                                        <span class="skill-tag">Spring Boot</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-cluster">
+                                    <h4>Databases & Tools</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">MySQL</span>
+                                        <span class="skill-tag">PostgreSQL</span>
+                                        <span class="skill-tag">Firebase</span>
+                                        <span class="skill-tag">Git</span>
+                                        <span class="skill-tag">VS Code</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons mt-5">
+                        <a href="#contact-section" class="btn btn-primary py-3 px-5">
+                            <i class="icon-mail_outline mr-2"></i>Let's Connect
+                        </a>
+                        <a href="resume.pdf" class="btn btn-outline-primary py-3 px-5 ml-3">
+                            <i class="icon-download mr-2"></i>Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Passionate software engineer with expertise in web development and problem-solving. Currently pursuing Bachelor's degree with focus on building scalable solutions.</p>
+          </div>
+        </div>
+
+    	<div class="row justify-content-center mt-5">
+    		<div class="col-md-6 text-center ftco-animate">
+    			<p><a href="resume.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    		</div>
+    	</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects & Achievements</h1>
+            <h2 class="mb-4">Featured Work</h2>
+            <p>Showcasing my technical expertise and problem-solving capabilities through real-world projects.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/heart_disease_prediction.svg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">AI-Powered Heart Disease Prediction Platform</h3>
+                <p>Built a web platform using Stacking Ensemble for heart disease risk prediction with SHAP for model interpretability.</p>
+                <ul class="mt-3">
+                  <li>Flask Backend</li>
+                  <li>Scikit-learn Modeling</li>
+                  <li>Interactive UI/UX</li>
+                </ul>
+                <p class="mt-3">
+                  <a href="#" class="btn btn-primary py-2 px-3">View Project</a>
+                  <a href="#" class="btn btn-outline-primary py-2 px-3 ml-2">Source Code</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/drug_inventory.svg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">Drug Inventory & Supply Chain System</h3>
+                <p>Centralized system for medical inventory tracking with real-time updates and automated alerts.</p>
+                <ul class="mt-3">
+                  <li>30% Waste Reduction</li>
+                  <li>Real-time Tracking</li>
+                  <li>Automated Alerts</li>
+                </ul>
+                <p class="mt-3">
+                  <a href="#" class="btn btn-primary py-2 px-3">View Project</a>
+                  <a href="#" class="btn btn-outline-primary py-2 px-3 ml-2">Source Code</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Achievements & Recognition</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center d-flex flex-row flex-nowrap overflow-auto">
+          <div class="col-md-4 mb-4" style="min-width: 300px; cursor: pointer;" onclick="window.location.href='#'">
+            <div class="achievement-card ftco-animate">
+              <div class="achievement-icon">
+                <i class="icon-trophy"></i>
+              </div>
+              <h3>Smart India Hackathon 2024</h3>
+              <p>Developed an innovative Drug Inventory & Supply Chain Tracking System</p>
+              <div class="achievement-stats">
+                <span><i class="icon-users"></i> Team Lead</span>
+                <span><i class="icon-star"></i> National Level</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" style="min-width: 300px; cursor: pointer;" onclick="window.location.href='#'">
+            <div class="achievement-card ftco-animate">
+              <div class="achievement-icon">
+                <i class="icon-code"></i>
+              </div>
+              <h3>Odoo Combat 2024</h3>
+              <p>Created a comprehensive Fitness Tracker and Calorie Counter web application</p>
+              <div class="achievement-stats">
+                <span><i class="icon-code-fork"></i> Full Stack</span>
+                <span><i class="icon-award"></i> Best UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" style="min-width: 300px; cursor: pointer;" onclick="window.location.href='#'">
+            <div class="achievement-card ftco-animate">
+              <div class="achievement-icon">
+                <i class="icon-heart"></i>
+              </div>
+              <h3>Indus Hackathon 2025</h3>
+              <p>Presented an AI-powered Heart Disease Prediction Platform</p>
+              <div class="achievement-stats">
+                <span><i class="icon-graph"></i> ML Model</span>
+                <span><i class="icon-shield"></i> Healthcare</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8 heading-section text-center ftco-animate">
+            <h2 class="mb-4">For Recruiters</h2>
+            <p>I am actively seeking opportunities in software development and web technologies.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="resume-wrap ftco-animate p-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Preferred Roles</h3>
+                  <ul class="mt-3">
+                    <li>Software Engineer</li>
+                    <li>Full Stack Developer</li>
+                    <li>Web Developer</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h3>Work Preferences</h3>
+                  <ul class="mt-3">
+                    <li>Open to Relocation</li>
+                    <li>Available for Full-time Positions</li>
+                    <li>Immediate Joiner</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="resume.pdf" class="btn btn-primary py-3 px-5">Download Resume</a>
+                <a href="https://www.linkedin.com/in/yogin-parmar-15b7aa1a8/" class="btn btn-outline-primary py-3 px-5 ml-3">LinkedIn Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
+                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<!-- <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div> -->
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/123yogin" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Feel free to reach out to me by filling the form below or using the contact details!</p>
+          </div>
+        </div>
+        <div class="row d-flex mb-5">
+          <div class="col-md-7 ftco-animate">
+            <form action="mailto:parmaryogin04@gmail.com" method="post" enctype="text/plain" class="contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5 ftco-animate">
+            <div class="contact-info bg-light p-4" style="background-color: #121212; border: 1px solid #ffbd39; border-radius: 8px;">
+              <div class="mb-4">
+                <h3 style="color: #000000;">Contact Information</h3>
+              </div>
+              <div class="d-flex mb-3" style="color: #000000;">
+                <span class="icon icon-map-marker mr-3" style="color: #ffbd39;"></span>
+                <span>Gandhingar, India</span>
+              </div>
+              <div class="d-flex mb-3" style="color: #000000;">
+                <span class="icon icon-phone mr-3" style="color: #ffbd39;"></span>
+                <span><a href="tel:+919327024593" style="color: #000000;">+91 9327024593</a></span>
+              </div>
+              <div class="d-flex mb-3" style="color: #000000;">
+                <span class="icon icon-envelope mr-3" style="color: #ffbd39;"></span>
+                <span><a href="mailto:parmaryogin04@gmail.com" style="color: #000000;">parmaryogin04@gmail.com</a></span>
+              </div>
+              <div class="d-flex mb-3" style="color: #000000;">
+                <span class="icon icon-file mr-3" style="color: #ffbd39;"></span>
+                <span><a href="resume.pdf" target="_blank" style="color: #000000;">Download Resume</a></span>
+              </div>
+              <ul class="ftco-footer-social list-unstyled d-flex justify-content-start">
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/yogin-parmar-15b7aa1a8/" style="color: #ffbd39;"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/yogin_04/" style="color: #ffbd39;"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by Yogin 
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

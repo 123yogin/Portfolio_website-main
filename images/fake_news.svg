@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- News Document Icons -->
+  <g transform="translate(200,150)">
+    <rect width="120" height="150" fill="#fff" stroke="#6c757d" stroke-width="2" rx="5"/>
+    <line x1="20" y1="30" x2="100" y2="30" stroke="#dc3545" stroke-width="4"/>
+    <line x1="20" y1="50" x2="100" y2="50" stroke="#dc3545" stroke-width="4"/>
+    <line x1="20" y1="70" x2="80" y2="70" stroke="#dc3545" stroke-width="4"/>
+  </g>
+  
+  <!-- ML Processing Symbol -->
+  <g transform="translate(350,200)">
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#007bff" stroke-width="3"/>
+    <path d="M30,50 L70,50 M50,30 L50,70" stroke="#007bff" stroke-width="3"/>
+    <circle cx="50" cy="50" r="20" fill="#007bff"/>
+  </g>
+  
+  <!-- Verified Document -->
+  <g transform="translate(500,150)">
+    <rect width="120" height="150" fill="#fff" stroke="#28a745" stroke-width="2" rx="5"/>
+    <path d="M530,200 L560,230 L600,170" fill="none" stroke="#28a745" stroke-width="4"/>
+  </g>
+  
+  <!-- Connection Arrows -->
+  <path d="M320,225 L350,225" stroke="#17a2b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M440,225 L500,225" stroke="#17a2b8" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#17a2b8"/>
+    </marker>
+  </defs>
+</svg>

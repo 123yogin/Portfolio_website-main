@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- Heart Icon -->
+  <path d="M400 320c-4-4-8-8-12-12-32-32-64-64-96-96-32-32-48-64-48-96 0-32 16-64 48-80 32-16 64-16 96 0 8 4 16 8 24 16 8-8 16-12 24-16 32-16 64-16 96 0 32 16 48 48 48 80 0 32-16 64-48 96-32 32-64 64-96 96-4 4-8 8-12 12-8 8-16 8-24 0z" fill="#ff6b6b"/>
+  
+  <!-- ECG Line -->
+  <path d="M100 200 L200 200 L250 100 L300 300 L350 200 L400 200 L450 150 L500 250 L550 200 L700 200" stroke="#20c997" stroke-width="4" fill="none"/>
+  
+  <!-- AI Network Nodes -->
+  <g fill="#4dabf7">
+    <circle cx="200" cy="150" r="8"/>
+    <circle cx="300" cy="180" r="8"/>
+    <circle cx="400" cy="120" r="8"/>
+    <circle cx="500" cy="160" r="8"/>
+    <circle cx="600" cy="140" r="8"/>
+  </g>
+  
+  <!-- Network Connections -->
+  <g stroke="#4dabf7" stroke-width="2">
+    <line x1="200" y1="150" x2="300" y2="180"/>
+    <line x1="300" y1="180" x2="400" y2="120"/>
+    <line x1="400" y1="120" x2="500" y2="160"/>
+    <line x1="500" y1="160" x2="600" y2="140"/>
+  </g>
+</svg>
